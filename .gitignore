@@ -9,3 +9,8 @@
 !assets/
 !assets/hero-workspace.png
 !assets/favicon.svg
+!prospection/
+!prospection/README.md
+!prospection/messages.md
+!prospection/offre.md
+!prospection/suivi-prospects.csv
