@@ -1,6 +1,7 @@
 *
 
 !.gitignore
+!.nojekyll
 !README.md
 !index.html
 !styles.css
