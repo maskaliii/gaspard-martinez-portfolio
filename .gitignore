@@ -1,0 +1,10 @@
+*
+
+!.gitignore
+!README.md
+!index.html
+!styles.css
+!script.js
+!assets/
+!assets/hero-workspace.png
+!assets/favicon.svg
