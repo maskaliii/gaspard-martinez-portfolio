@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="GM">
-  <rect width="64" height="64" rx="12" fill="#18201d"/>
-  <path d="M18 40V24h12c5 0 8 3 8 7.5S35 39 30 39h-5v-5h4.6c1.8 0 2.9-.9 2.9-2.5s-1.1-2.5-2.9-2.5H24v11h-6Zm23 0V24h5.4l4.2 7.4 4.1-7.4H60v16h-5.8v-7l-2.8 4.8h-1.8L46.8 33v7H41Z" fill="#f7f4ee"/>
-  <path d="M18 46h42" stroke="#b6723d" stroke-width="4" stroke-linecap="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="MasKali Web">
+  <rect width="64" height="64" rx="12" fill="#101418"/>
+  <path d="M12 40V22h6.1l5.1 8.7 5-8.7h6V40h-6.4v-8.1l-3.1 5.2h-3l-3.2-5.2V40H12Zm28.2 0 5.5-18h6.7l5.6 18h-6.4l-.8-3.2h-3.9L46 40h-5.8Zm7.7-7.8h1.9l-1-4.2-.9 4.2Z" fill="#f4f1ea"/>
+  <path d="M12 48h40" stroke="#c28a2e" stroke-width="4" stroke-linecap="round"/>
 </svg>

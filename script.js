@@ -51,7 +51,7 @@ briefForm?.addEventListener("submit", (event) => {
   const data = new FormData(briefForm);
   const name = data.get("name")?.toString().trim() || "Non précisé";
   const type = data.get("type")?.toString().trim() || "Projet web";
-  const message = data.get("message")?.toString().trim() || "Bonjour Gaspard, je souhaite échanger au sujet d’un projet web.";
+  const message = data.get("message")?.toString().trim() || "Bonjour MasKali'Web, je souhaite échanger au sujet d’un projet web.";
   const bodyLines = [
     `Nom: ${name}`,
     `Besoin: ${type}`,
@@ -59,7 +59,7 @@ briefForm?.addEventListener("submit", (event) => {
     message,
   ];
 
-  const subject = encodeURIComponent(`Projet web - ${type}`);
+  const subject = encodeURIComponent(`Projet web MasKali'Web - ${type}`);
   const emailBody = encodeURIComponent(bodyLines.join("\n"));
   window.location.href = `mailto:gaspard.martinez.pro@gmail.com?subject=${subject}&body=${emailBody}`;
 });

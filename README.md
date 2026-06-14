@@ -1,6 +1,6 @@
-# Portfolio de Gaspard Martinez
+# MasKali'Web
 
-Site vitrine statique pour présenter l'activité de développeur web de Gaspard Martinez.
+Site vitrine statique pour présenter l'activité de MasKali'Web : création de sites vitrines, landing pages, refontes et améliorations web pour petites entreprises.
 
 ## Fichiers
 
@@ -15,18 +15,10 @@ Ouvrir `index.html` dans un navigateur.
 
 ## Publication GitHub Pages
 
-Une fois connecté à GitHub CLI :
-
-```powershell
-gh auth login
-gh repo create gaspard-martinez-portfolio --public --source=. --remote=origin --push
-gh api repos/:owner/gaspard-martinez-portfolio/pages -X POST -f source.branch=codex/portfolio-polish -f source.path=/
-```
-
-Le site sera ensuite disponible à une adresse du type :
+Le site public est publié via GitHub Pages :
 
 ```text
-https://VOTRE-PSEUDO.github.io/gaspard-martinez-portfolio/
+https://maskaliii.github.io/gaspard-martinez-portfolio/
 ```
 
 ## Contact
