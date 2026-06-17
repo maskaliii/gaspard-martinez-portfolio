@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="MasKali Web">
-  <rect width="64" height="64" rx="14" fill="#0B1020"/>
-  <path d="M10 41V21h6.5l5.4 8.9 5.3-8.9h6.4v20H27v-9.8l-3.5 5.4h-3.2l-3.5-5.4V41H10Zm30.4 0 6-20h7.1l6.1 20h-6.8l-.8-3.5h-4.3l-.8 3.5h-6.5Zm8.5-8.1h2l-1-4.6-1 4.6Z" fill="#F8FAFC"/>
-  <path d="M10 50h39" stroke="#21D4FD" stroke-width="4" stroke-linecap="round"/>
-</svg>

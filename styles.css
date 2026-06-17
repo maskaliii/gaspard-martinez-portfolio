@@ -80,9 +80,40 @@ a {
   backdrop-filter: blur(18px);
 }
 
-.brand img {
-  width: clamp(170px, 17vw, 245px);
-  height: auto;
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  color: var(--night);
+  font-weight: 950;
+}
+
+.brand-mark {
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 46px;
+  height: 46px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
+  background:
+    radial-gradient(circle at 25% 18%, rgba(33, 212, 253, 0.22), transparent 40%),
+    linear-gradient(145deg, #0b1020, #111827);
+  box-shadow: 0 14px 28px rgba(11, 16, 32, 0.18);
+}
+
+.brand-mark img {
+  width: 39px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.brand-name {
+  font-size: clamp(1.02rem, 1.8vw, 1.24rem);
+  line-height: 1;
+  white-space: nowrap;
 }
 
 .site-nav {
@@ -165,8 +196,10 @@ a {
 }
 
 .hero-logo {
-  width: min(285px, 72vw);
-  margin-bottom: 26px;
+  display: block;
+  width: min(300px, 74vw);
+  margin: 0 0 26px;
+  filter: drop-shadow(0 18px 26px rgba(15, 23, 42, 0.12));
 }
 
 .eyebrow {
@@ -513,7 +546,8 @@ h3 {
 }
 
 .method-header img {
-  width: min(250px, 44vw);
+  width: min(210px, 42vw);
+  filter: drop-shadow(0 14px 22px rgba(15, 23, 42, 0.1));
 }
 
 .method-header p {
@@ -732,8 +766,9 @@ h3 {
 }
 
 .site-footer img {
-  width: 235px;
+  width: min(235px, 70vw);
   margin-bottom: 14px;
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.28));
 }
 
 .site-footer p {
@@ -840,8 +875,8 @@ h3 {
     grid-template-columns: 1fr auto;
   }
 
-  .brand img {
-    width: 180px;
+  .brand-name {
+    font-size: 1.05rem;
   }
 
   .nav-toggle {
