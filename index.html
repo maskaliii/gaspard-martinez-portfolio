@@ -5,30 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="MasKali'Web accompagne les petites entreprises dans la création de sites vitrines, landing pages et refontes web professionnelles."
+      content="MasKali'Web crée, améliore et refond des sites internet professionnels pour entreprises, indépendants, artisans et commerces locaux."
     />
-    <meta name="theme-color" content="#101418" />
-    <meta property="og:title" content="MasKali'Web | Création de sites web professionnels" />
+    <meta name="theme-color" content="#0B1020" />
+    <meta property="og:title" content="MasKali'Web | Sites web modernes pour entreprises" />
     <meta
       property="og:description"
-      content="Sites vitrines, landing pages et refontes web pour entreprises locales, avec un cadre professionnel clair."
+      content="Création de sites vitrines, landing pages, refontes et optimisation web pour inspirer confiance et générer plus de demandes qualifiées."
     />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="assets/hero-workspace.png" />
-    <title>MasKali'Web | Création de sites web professionnels</title>
+    <title>MasKali'Web | Sites web modernes pour entreprises</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="assets/logo-maskaliweb-dark.svg" as="image" />
     <link rel="preload" href="assets/hero-workspace.png" as="image" />
     <link rel="stylesheet" href="styles.css" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Organization",
+        "@type": "ProfessionalService",
         "name": "MasKali'Web",
+        "founder": {
+          "@type": "Person",
+          "name": "Martinez Gaspard"
+        },
         "email": "gaspard.martinez.pro@gmail.com",
-        "telephone": "+33650830825",
+        "telephone": "+33629148119",
         "areaServed": "France",
-        "description": "Création de sites vitrines, landing pages et refontes web pour petites entreprises.",
-        "sameAs": ["https://maskaliii.github.io/gaspard-martinez-portfolio/"]
+        "serviceType": ["Création de site vitrine", "Refonte de site web", "Landing page", "Optimisation mobile"],
+        "url": "https://maskaliii.github.io/gaspard-martinez-portfolio/"
       }
     </script>
   </head>
@@ -37,8 +42,7 @@
 
     <header class="site-header" data-header>
       <a class="brand" href="#accueil" aria-label="MasKali'Web - accueil">
-        <span class="brand-mark">MW</span>
-        <span>MasKali'Web</span>
+        <img src="assets/logo-maskaliweb-dark.svg" alt="Logo MasKali'Web" />
       </a>
 
       <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" data-nav-toggle>
@@ -46,230 +50,364 @@
         <span></span>
       </button>
 
-      <nav class="site-nav" data-nav>
+      <nav class="site-nav" data-nav aria-label="Navigation principale">
+        <a href="#accueil">Accueil</a>
         <a href="#services">Services</a>
         <a href="#offres">Offres</a>
-        <a href="#cadre">Cadre</a>
         <a href="#methode">Méthode</a>
+        <a href="#realisations">Réalisations</a>
+        <a href="#apropos">À propos</a>
         <a href="#contact">Contact</a>
       </nav>
+
+      <a class="header-cta" href="#contact">Demander un devis</a>
     </header>
 
     <main id="contenu">
       <section class="hero" id="accueil">
-        <div class="hero-content">
-          <p class="eyebrow">Création de sites web pour entreprises locales</p>
-          <h1>MasKali'Web</h1>
-          <p class="hero-statement">Une présence en ligne crédible, claire et prête à convertir.</p>
+        <div class="hero-content reveal">
+          <img class="hero-logo" src="assets/logo-maskaliweb-dark.svg" alt="MasKali'Web" />
+          <p class="eyebrow">Développement web pour entreprises locales</p>
+          <h1>Des sites web modernes, clairs et pensés pour convertir.</h1>
           <p class="hero-copy">
-            Sites vitrines, landing pages et refontes pour les entreprises qui veulent inspirer confiance,
-            présenter leurs services correctement et recevoir plus de demandes qualifiées.
+            Je crée et améliore des sites internet professionnels pour aider les entreprises à inspirer confiance,
+            présenter leurs services et recevoir plus de demandes qualifiées.
           </p>
-          <div class="trust-row" aria-label="Garanties principales">
+
+          <div class="badge-list" aria-label="Points forts">
+            <span>Jeune développeur web</span>
             <span>Entreprise déclarée</span>
             <span>Devis clair</span>
-            <span>Livraison cadrée</span>
+            <span>Livraison structurée</span>
+            <span>Accompagnement jusqu'à la mise en ligne</span>
           </div>
+
           <div class="hero-actions" aria-label="Actions principales">
-            <a class="button primary" href="mailto:gaspard.martinez.pro@gmail.com?subject=Projet%20site%20web%20-%20MasKali%27Web">Demander un devis</a>
-            <a class="button secondary" href="#offres">Voir les offres</a>
+            <a class="button primary" href="#contact">Demander un devis</a>
+            <a class="button secondary" href="#services">Voir mes services</a>
           </div>
         </div>
 
-        <div class="hero-media" aria-label="Espace de travail web design">
-          <img src="assets/hero-workspace.png" alt="Ordinateur affichant des interfaces de site web modernes" />
+        <div class="hero-visual reveal" aria-label="Aperçu d'un environnement de création de site web">
+          <img src="assets/hero-workspace.png" alt="Ordinateur affichant des maquettes de sites web et du code" />
+          <div class="visual-panel panel-score">
+            <span>Projet web</span>
+            <strong>Prêt pour la mise en ligne</strong>
+          </div>
+          <div class="visual-panel panel-code" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </section>
 
-      <section class="proof-band" aria-label="Engagements MasKali'Web">
-        <div>
-          <strong>Site professionnel</strong>
-          <span>Une image nette pour rassurer dès les premières secondes.</span>
-        </div>
-        <div>
-          <strong>Mobile en priorité</strong>
-          <span>Une navigation lisible sur téléphone, là où vos clients vous découvrent.</span>
-        </div>
-        <div>
-          <strong>Cadre officiel</strong>
-          <span>Devis, facturation et livraison avec des engagements compréhensibles.</span>
-        </div>
-      </section>
-
-      <section class="section services-section" id="services">
-        <div class="section-heading">
-          <p class="eyebrow">Services</p>
-          <h2>Des sites conçus pour présenter, rassurer et déclencher le contact.</h2>
+      <section class="section problem-section" aria-labelledby="problem-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Pourquoi agir</p>
+          <h2 id="problem-title">Votre site internet est souvent le premier contact avec vos futurs clients.</h2>
           <p>
-            MasKali'Web accompagne les petites entreprises, indépendants, commerces et artisans qui ont besoin
-            d'un site propre, sérieux et simple à maintenir.
+            Un site ancien, lent, peu clair ou absent peut faire perdre des demandes de devis. Aujourd'hui, un client
+            regarde souvent votre présence en ligne avant de vous appeler. Mon objectif est de vous aider à avoir une
+            image professionnelle, crédible et efficace.
+          </p>
+        </div>
+        <div class="problem-grid">
+          <article class="problem-card reveal">
+            <span class="icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 5h16v10H4z"/><path d="M8 19h8"/><path d="M12 15v4"/></svg>
+            </span>
+            <h3>Site vieillissant</h3>
+            <p>Une interface datée peut donner l'impression que l'entreprise n'est plus active ou pas assez structurée.</p>
+          </article>
+          <article class="problem-card reveal">
+            <span class="icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg>
+            </span>
+            <h3>Manque de visibilité</h3>
+            <p>Des informations mal organisées rendent l'offre difficile à comprendre et réduisent la confiance.</p>
+          </article>
+          <article class="problem-card reveal">
+            <span class="icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H7l-4 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4z"/></svg>
+            </span>
+            <h3>Peu de demandes de contact</h3>
+            <p>Un parcours flou, un formulaire discret ou une version mobile faible peuvent freiner les clients.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section services-section" id="services" aria-labelledby="services-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Services</p>
+          <h2 id="services-title">Tout ce qu'il faut pour une présence web sérieuse.</h2>
+          <p>
+            MasKali'Web accompagne les entreprises, indépendants, artisans et commerces locaux sur les éléments qui
+            comptent vraiment : design, clarté, mobile, contact, mise en ligne et crédibilité.
           </p>
         </div>
         <div class="service-grid">
-          <article class="card">
-            <span class="card-number">01</span>
-            <h3>Site vitrine</h3>
-            <p>Présenter votre activité, vos services, vos réalisations, vos horaires et vos moyens de contact avec une structure claire.</p>
+          <article class="service-card reveal">
+            <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4z"/><path d="M4 9h16"/></svg></span>
+            <h3>Création de site vitrine</h3>
+            <p>Un site clair pour présenter votre activité, vos services, vos preuves de sérieux et vos coordonnées.</p>
           </article>
-          <article class="card">
-            <span class="card-number">02</span>
-            <h3>Landing page</h3>
-            <p>Créer une page ciblée pour une offre, une campagne, une prise de rendez-vous ou le lancement d'une prestation.</p>
+          <article class="service-card reveal">
+            <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V4h16"/><path d="M8 16l3-3 3 2 5-7"/></svg></span>
+            <h3>Refonte de site existant</h3>
+            <p>Modernisation d'un site ancien pour améliorer l'image, la lisibilité, le mobile et la conversion.</p>
           </article>
-          <article class="card">
-            <span class="card-number">03</span>
-            <h3>Refonte web</h3>
-            <p>Moderniser un site existant pour améliorer l'image, la lisibilité, l'affichage mobile et le parcours de contact.</p>
+          <article class="service-card reveal">
+            <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h14v16H5z"/><path d="M8 8h8"/><path d="M8 12h5"/><path d="M8 16h7"/></svg></span>
+            <h3>Landing page professionnelle</h3>
+            <p>Une page ciblée pour présenter une offre, générer des demandes ou soutenir une campagne locale.</p>
           </article>
-          <article class="card">
-            <span class="card-number">04</span>
-            <h3>Améliorations ciblées</h3>
-            <p>Corriger une page, revoir une section, améliorer un formulaire, optimiser les textes ou remettre de l'ordre dans l'existant.</p>
+          <article class="service-card reveal">
+            <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 2h8v20H8z"/><path d="M11 18h2"/></svg></span>
+            <h3>Optimisation mobile</h3>
+            <p>Amélioration de l'affichage sur téléphone pour rendre le site plus confortable et plus crédible.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.2 6.4 20.2 7.5 14 3 9.6l6.2-.9z"/></svg></span>
+            <h3>Amélioration du design</h3>
+            <p>Hiérarchie visuelle, couleurs, sections et boutons retravaillés pour un rendu plus premium.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/><path d="M5 21h14"/></svg></span>
+            <h3>Mise en ligne et configuration</h3>
+            <p>Publication du site, configuration de base et accompagnement pour que le client sache où en est son projet.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 1 7 0l2 2a5 5 0 0 1-7 7l-1-1"/><path d="M14 11a5 5 0 0 1-7 0L5 9a5 5 0 0 1 7-7l1 1"/></svg></span>
+            <h3>Hébergement et nom de domaine</h3>
+            <p>Aide au choix et à la configuration pour éviter les blocages techniques au moment de publier.</p>
+          </article>
+          <article class="service-card reveal">
+            <span class="icon-box" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M10 18a8 8 0 1 1 6-2.7L21 20"/><path d="M8 11h8"/><path d="M8 14h5"/></svg></span>
+            <h3>SEO de base</h3>
+            <p>Structure, titres, textes et fondations techniques pour une présence plus propre sur les moteurs de recherche.</p>
           </article>
         </div>
       </section>
 
-      <section class="section offers-section" id="offres">
-        <div class="section-heading">
+      <section class="section offers-section" id="offres" aria-labelledby="offers-title">
+        <div class="section-heading reveal">
           <p class="eyebrow">Offres</p>
-          <h2>Trois formats simples selon votre besoin.</h2>
+          <h2 id="offers-title">Des formules lisibles pour cadrer le budget.</h2>
+          <p>Les tarifs sont indicatifs et peuvent varier selon le contenu, les fonctionnalités et le niveau d'accompagnement demandé.</p>
         </div>
         <div class="offers-grid">
-          <article class="offer-card">
-            <p class="offer-label">Essentiel</p>
-            <h3>Site one-page</h3>
-            <p>Une page complète pour présenter l'activité, rassurer et faciliter la prise de contact.</p>
+          <article class="offer-card reveal">
+            <p class="offer-kicker">Offre Essentiel</p>
+            <h3>Pour une présence simple et professionnelle.</h3>
+            <p class="price">À partir de 400 €</p>
             <ul>
-              <li>Structure claire</li>
-              <li>Version mobile</li>
-              <li>Contact visible</li>
+              <li>Site 1 à 3 pages</li>
+              <li>Design responsive</li>
+              <li>Formulaire de contact</li>
+              <li>Mise en ligne accompagnée</li>
             </ul>
           </article>
-          <article class="offer-card featured">
-            <p class="offer-label">Recommandé</p>
-            <h3>Site vitrine complet</h3>
-            <p>Plusieurs sections ou pages pour développer les services, la confiance et les demandes entrantes.</p>
+          <article class="offer-card featured reveal">
+            <p class="offer-kicker">Offre Professionnelle</p>
+            <h3>Pour une vraie image en ligne.</h3>
+            <p class="price">À partir de 800 €</p>
             <ul>
-              <li>Arborescence adaptée</li>
-              <li>Design professionnel</li>
-              <li>Base SEO locale</li>
+              <li>Site 4 à 7 pages</li>
+              <li>Design personnalisé</li>
+              <li>Textes structurés</li>
+              <li>SEO de base</li>
+              <li>Formulaire de devis</li>
+              <li>Accompagnement hébergement</li>
             </ul>
           </article>
-          <article class="offer-card">
-            <p class="offer-label">Refonte</p>
-            <h3>Modernisation</h3>
-            <p>Un travail ciblé sur un site déjà en ligne pour le rendre plus sérieux, lisible et efficace.</p>
+          <article class="offer-card reveal">
+            <p class="offer-kicker">Offre Sur Mesure</p>
+            <h3>Pour un projet plus complet.</h3>
+            <p class="price">Prix sur devis</p>
             <ul>
-              <li>Audit rapide</li>
-              <li>Priorités d'amélioration</li>
-              <li>Mise à jour visuelle</li>
+              <li>Refonte complète</li>
+              <li>Pages avancées</li>
+              <li>Fonctionnalités spécifiques</li>
+              <li>E-commerce possible</li>
+              <li>Optimisation avancée</li>
             </ul>
           </article>
         </div>
       </section>
 
-      <section class="section official-section" id="cadre">
-        <div class="official-copy">
-          <p class="eyebrow">Cadre professionnel</p>
-          <h2>Un projet web sérieux doit aussi être clair administrativement.</h2>
-          <p>
-            MasKali'Web fonctionne avec un cadre professionnel: entreprise déclarée, devis avant démarrage,
-            facturation, périmètre de livraison défini et échanges suivis jusqu'à la mise en ligne.
-          </p>
-          <p>
-            Les sites sont conçus avec les bonnes pratiques actuelles: responsive, performance, structure propre,
-            accessibilité de base et éléments nécessaires à une présence conforme selon le projet.
-          </p>
+      <section class="section method-section" id="methode" aria-labelledby="method-title">
+        <div class="method-header reveal">
+          <div>
+            <p class="eyebrow">Méthode</p>
+            <h2 id="method-title">Comment se déroule un projet ?</h2>
+            <p>
+              Chaque étape est pensée pour rassurer, éviter le flou et avancer avec une vision claire du résultat attendu.
+            </p>
+          </div>
+          <img src="assets/logo-maskaliweb-dark.svg" alt="Signature MasKali'Web" />
         </div>
-        <div class="official-list">
-          <div>
-            <strong>Devis avant projet</strong>
-            <span>Le périmètre, les pages et les livrables sont posés avant de commencer.</span>
-          </div>
-          <div>
-            <strong>Facturation</strong>
-            <span>Prestation réalisée dans un cadre déclaré, avec documents professionnels.</span>
-          </div>
-          <div>
-            <strong>Bonnes pratiques web</strong>
-            <span>Responsive, lisibilité, performance, sécurité d'hébergement et base SEO.</span>
-          </div>
-          <div>
-            <strong>Conformité à prévoir</strong>
-            <span>Mentions légales, politique de confidentialité ou cookies selon les besoins du site.</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="section process-section" id="methode">
-        <div class="section-heading">
-          <p class="eyebrow">Méthode</p>
-          <h2>Un déroulé net, sans jargon inutile.</h2>
-        </div>
-        <ol class="timeline">
-          <li>
-            <span>01</span>
-            <h3>Diagnostic</h3>
-            <p>Objectif du site, cible, pages utiles, contenus disponibles et priorités commerciales.</p>
-          </li>
-          <li>
-            <span>02</span>
-            <h3>Structure</h3>
-            <p>Organisation des sections, hiérarchie des messages et appels à l'action.</p>
-          </li>
-          <li>
-            <span>03</span>
-            <h3>Création</h3>
-            <p>Design, intégration responsive, optimisation des textes et vérification mobile.</p>
-          </li>
-          <li>
-            <span>04</span>
-            <h3>Mise en ligne</h3>
-            <p>Derniers ajustements, publication et conseils pour garder un site propre.</p>
-          </li>
+        <ol class="method-timeline">
+          <li class="reveal"><span>01</span><h3>Échange initial</h3><p>Comprendre l'activité, les attentes et les priorités.</p></li>
+          <li class="reveal"><span>02</span><h3>Questionnaire projet</h3><p>Rassembler les informations utiles avant de construire.</p></li>
+          <li class="reveal"><span>03</span><h3>Proposition claire</h3><p>Définir le périmètre, les pages, le délai et le budget.</p></li>
+          <li class="reveal"><span>04</span><h3>Maquette / structure</h3><p>Organiser les sections et les messages clés du site.</p></li>
+          <li class="reveal"><span>05</span><h3>Création du site</h3><p>Intégrer le design, les contenus et les fonctionnalités.</p></li>
+          <li class="reveal"><span>06</span><h3>Corrections</h3><p>Ajuster le rendu avec les retours du client.</p></li>
+          <li class="reveal"><span>07</span><h3>Mise en ligne</h3><p>Publier le site et vérifier les points essentiels.</p></li>
+          <li class="reveal"><span>08</span><h3>Livraison des accès</h3><p>Transmettre les éléments nécessaires et expliquer la suite.</p></li>
         </ol>
       </section>
 
-      <section class="contact-section" id="contact">
-        <div class="contact-copy">
-          <p class="eyebrow">Contact</p>
-          <h2>Parlez-nous de votre projet web.</h2>
+      <section class="section projects-section" id="realisations" aria-labelledby="projects-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Réalisations</p>
+          <h2 id="projects-title">Exemples de projets.</h2>
+          <p>Exemples de concepts / démonstrations pour illustrer les types de sites réalisables.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-visual visual-artisan"></div>
+            <p>Concept démonstration</p>
+            <h3>Site vitrine artisan</h3>
+            <span>Présentation claire des prestations, zones d'intervention et demandes de devis.</span>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-visual visual-local"></div>
+            <p>Concept démonstration</p>
+            <h3>Landing page service local</h3>
+            <span>Une page directe pour présenter une offre et convertir les visiteurs en contacts.</span>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-visual visual-portfolio"></div>
+            <p>Concept démonstration</p>
+            <h3>Portfolio professionnel</h3>
+            <span>Une identité personnelle soignée pour inspirer confiance et montrer son expertise.</span>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-visual visual-refonte"></div>
+            <p>Concept démonstration</p>
+            <h3>Refonte moderne</h3>
+            <span>Un site ancien restructuré pour améliorer l'image, le mobile et la prise de contact.</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="section about-section" id="apropos" aria-labelledby="about-title">
+        <div class="about-copy reveal">
+          <p class="eyebrow">À propos</p>
+          <h2 id="about-title">Un accompagnement moderne, sérieux et accessible.</h2>
           <p>
-            Indiquez votre activité, le type de site souhaité et votre délai. Une première réponse claire permet
-            de savoir rapidement si le projet relève d'un site vitrine, d'une landing page ou d'une refonte.
+            Je m'appelle Martinez Gaspard, jeune développeur web et fondateur de MasKali'Web. Je me spécialise dans
+            la création et l'amélioration de sites internet pour les entreprises qui veulent une présence en ligne plus
+            sérieuse, plus claire et plus efficace.
+          </p>
+          <p>
+            Mon objectif est de proposer un accompagnement accessible, structuré et professionnel, avec une vraie
+            attention portée au design, à la lisibilité et à l'expérience utilisateur.
           </p>
         </div>
-        <div class="contact-panel">
-          <a href="mailto:gaspard.martinez.pro@gmail.com?subject=Projet%20site%20web%20-%20MasKali%27Web">Email professionnel</a>
-          <a href="tel:+33650830825">06 50 83 08 25</a>
-          <p>Sites vitrines, landing pages, refontes et améliorations web.</p>
+        <div class="values-grid">
+          <article class="value-card reveal"><strong>Sérieux</strong><span>Un cadre clair, des délais annoncés et un résultat propre.</span></article>
+          <article class="value-card reveal"><strong>Réactivité</strong><span>Des échanges simples pour avancer vite sans perdre la qualité.</span></article>
+          <article class="value-card reveal"><strong>Écoute</strong><span>Une compréhension réelle de l'activité avant de parler design.</span></article>
+          <article class="value-card reveal"><strong>Accompagnement</strong><span>Un soutien même si le client ne connaît rien à la technique.</span></article>
         </div>
-        <form class="brief-form" data-brief-form>
+      </section>
+
+      <section class="section compliance-section" aria-labelledby="compliance-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Cadre professionnel</p>
+          <h2 id="compliance-title">Une prestation déclarée, cadrée et livrée proprement.</h2>
+          <p>
+            MasKali'Web travaille dans un cadre déclaré avec devis, facturation et périmètre de livraison. Selon le
+            projet, les éléments nécessaires comme les mentions légales, les formulaires, la politique de confidentialité
+            ou les réglages liés aux cookies peuvent être prévus.
+          </p>
+        </div>
+        <div class="compliance-grid">
+          <span class="reveal">Devis clair avant démarrage</span>
+          <span class="reveal">Facturation professionnelle</span>
+          <span class="reveal">Bonnes pratiques responsive</span>
+          <span class="reveal">Base SEO et structure propre</span>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-copy reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Parlez-moi de votre projet.</h2>
+          <p>
+            Décrivez votre activité, votre besoin et votre objectif. Je vous répondrai avec une première orientation
+            claire pour savoir quel format de site est le plus adapté.
+          </p>
+          <div class="contact-direct">
+            <a href="tel:+33629148119">+33 6 29 14 81 19</a>
+            <a href="mailto:gaspard.martinez.pro@gmail.com?subject=Demande%20de%20devis%20-%20MasKali%27Web">gaspard.martinez.pro@gmail.com</a>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" data-brief-form>
           <div>
-            <label for="brief-name">Nom / entreprise</label>
-            <input id="brief-name" name="name" type="text" autocomplete="organization" placeholder="Votre entreprise" />
+            <label for="brief-name">Nom</label>
+            <input id="brief-name" name="name" type="text" autocomplete="name" placeholder="Votre nom" required />
           </div>
           <div>
-            <label for="brief-type">Besoin</label>
+            <label for="brief-company">Entreprise</label>
+            <input id="brief-company" name="company" type="text" autocomplete="organization" placeholder="Nom de l'entreprise" />
+          </div>
+          <div>
+            <label for="brief-email">Email</label>
+            <input id="brief-email" name="email" type="email" autocomplete="email" placeholder="vous@entreprise.fr" required />
+          </div>
+          <div>
+            <label for="brief-phone">Téléphone</label>
+            <input id="brief-phone" name="phone" type="tel" autocomplete="tel" placeholder="06 00 00 00 00" />
+          </div>
+          <div>
+            <label for="brief-type">Type de projet</label>
             <select id="brief-type" name="type">
               <option value="Site vitrine">Site vitrine</option>
-              <option value="Landing page">Landing page</option>
               <option value="Refonte">Refonte</option>
-              <option value="Améliorations web">Améliorations web</option>
+              <option value="Landing page">Landing page</option>
+              <option value="Optimisation / corrections">Optimisation / corrections</option>
+              <option value="Projet sur mesure">Projet sur mesure</option>
+            </select>
+          </div>
+          <div>
+            <label for="brief-budget">Budget approximatif</label>
+            <select id="brief-budget" name="budget">
+              <option value="À définir">À définir</option>
+              <option value="400 - 800 €">400 - 800 €</option>
+              <option value="800 - 1500 €">800 - 1500 €</option>
+              <option value="1500 € et plus">1500 € et plus</option>
             </select>
           </div>
           <div class="form-wide">
             <label for="brief-message">Message</label>
-            <textarea id="brief-message" name="message" rows="4" placeholder="Présentez rapidement votre activité et votre besoin"></textarea>
+            <textarea id="brief-message" name="message" rows="5" placeholder="Présentez votre activité, votre besoin et votre délai"></textarea>
           </div>
-          <button class="button primary" type="submit">Préparer la demande</button>
+          <button class="button primary" type="submit">Envoyer ma demande</button>
         </form>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>© 2026 MasKali'Web. Création de sites web professionnels.</p>
-      <a href="#accueil">Retour en haut</a>
+      <div>
+        <img src="assets/logo-maskaliweb-light.svg" alt="Logo MasKali'Web" />
+        <p>Création et amélioration de sites internet pour entreprises.</p>
+      </div>
+      <nav aria-label="Navigation du footer">
+        <a href="#services">Services</a>
+        <a href="#offres">Offres</a>
+        <a href="#methode">Méthode</a>
+        <a href="#realisations">Réalisations</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <address>
+        <a href="tel:+33629148119">+33 6 29 14 81 19</a>
+        <a href="mailto:gaspard.martinez.pro@gmail.com">gaspard.martinez.pro@gmail.com</a>
+      </address>
     </footer>
 
     <script src="script.js"></script>

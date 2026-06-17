@@ -1,21 +1,26 @@
 # MasKali'Web
 
-Site vitrine statique pour présenter l'activité de MasKali'Web : création de sites vitrines, landing pages, refontes et améliorations web pour petites entreprises.
+Site vitrine officiel de MasKali'Web, activité de création, amélioration et refonte de sites internet pour entreprises, indépendants, artisans et commerces locaux.
 
-## Fichiers
+## Objectif
 
-- `index.html` : structure et contenu du site
+Le site présente :
+
+- les services web proposés ;
+- les offres indicatives ;
+- la méthode de travail ;
+- des exemples de concepts ;
+- le fondateur Martinez Gaspard ;
+- un formulaire de demande de devis.
+
+## Fichiers principaux
+
+- `index.html` : contenu et structure du site
 - `styles.css` : design responsive
-- `script.js` : navigation mobile, liens actifs et formulaire de contact
-- `assets/` : visuels du site
+- `script.js` : navigation, animations au scroll et formulaire mail
+- `assets/` : logos et visuels
 
-## Utilisation
-
-Ouvrir `index.html` dans un navigateur.
-
-## Publication GitHub Pages
-
-Le site public est publié via GitHub Pages :
+## Site public
 
 ```text
 https://maskaliii.github.io/gaspard-martinez-portfolio/
@@ -23,5 +28,5 @@ https://maskaliii.github.io/gaspard-martinez-portfolio/
 
 ## Contact
 
+- Téléphone : +33 6 29 14 81 19
 - Email : gaspard.martinez.pro@gmail.com
-- Téléphone : 06 50 83 08 25

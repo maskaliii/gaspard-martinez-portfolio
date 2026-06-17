@@ -14,6 +14,8 @@
 !assets/
 !assets/hero-workspace.png
 !assets/favicon.svg
+!assets/logo-maskaliweb-dark.svg
+!assets/logo-maskaliweb-light.svg
 !radar-chantier/
 !radar-chantier/**
 radar-chantier/automation/.env

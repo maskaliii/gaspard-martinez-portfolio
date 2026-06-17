@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 330 72" role="img" aria-label="MasKali'Web">
+  <rect x="0" y="0" width="72" height="72" rx="18" fill="#F8FAFC"/>
+  <path d="M16 46V23h7.4l6.4 10.5L36.1 23h7.3v23h-7.7V34.7L31.6 41h-3.8l-4.1-6.3V46H16Zm35.7 0 6.8-23h8.2L73.6 46h-7.7l-1-4h-5.1l-1 4h-7.1Zm9.5-9.3h2.3l-1.2-5.2-1.1 5.2Z" fill="#0B1020"/>
+  <path d="M16 55h41" stroke="#21D4FD" stroke-width="4" stroke-linecap="round"/>
+  <text x="92" y="32" fill="#F8FAFC" font-family="Inter, Arial, sans-serif" font-size="25" font-weight="850">MasKali'Web</text>
+  <text x="93" y="54" fill="#94A3B8" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700">Création de sites internet</text>
+</svg>
